@@ -1,7 +1,8 @@
 {
   "profiles": {
     "Aquarius.ONE.Test.ConsoleApp": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "commandLineArgs": "users"
     }
   }
 }

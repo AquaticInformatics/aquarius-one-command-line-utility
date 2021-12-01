@@ -36,7 +36,10 @@ namespace Aquarius.ONE.CLI
                
                 return 1;
             }
-            var retValue = await Parser.Default.ParseArguments<LoginCommand, UserInfoCommand>(args).WithParsedAsync<ICommand>(t => t.Execute(clientSDK));
+            var retValue = await Parser.Default.ParseArguments<LoginCommand, 
+                UserInfoCommand, 
+                ParameterCommand, 
+                TranslationCommand, UserCommand>(args).WithParsedAsync<ICommand>(t => t.Execute(clientSDK));
 
            return 0;
 

@@ -10,7 +10,6 @@ namespace Aquarius.ONE.CLI.Commands
     {
         [Option('e', "environment", Required = true, HelpText = "Environment")]
         public string Environment { get; set; }
-
         [Option('u', "username", Required = true, HelpText = "Username")]
         public string Username { get; set; }
         [Option('p', "password", Required = true, HelpText = "Password")]
